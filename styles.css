@@ -1,0 +1,168 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0d0435;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-text {
+    font-size: 18px;
+    cursor: pointer;
+    color: #eff1f3; /* Cambia el color del texto de MENU */
+}
+
+.search {
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #0d0435; /* Cambia el color de fondo del icono de búsqueda */
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white; /* Asegura que el icono sea visible sobre el fondo */
+}
+
+.menu-icon {
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+}
+
+.logo {
+    height: 40px; /* Ajusta la altura del logo según sea necesario */
+}
+
+/* Estilos para el contenedor del logo secundario */
+.logo-container {
+    background-color: #1a5f9b; /* Cambia el color de fondo del contenedor */
+    padding: 10px 20px;
+    margin: 0; /* Elimina el margen superior */
+}
+
+.secondary-logo {
+    height: 100px; /* Ajusta la altura del logo secundario según sea necesario */
+    display: block; /* Asegura que se comporte como un bloque */
+    margin: 0 auto; /* Centra el logo dentro del contenedor */
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para las palabras */
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre los tags */
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas si es necesario */
+}
+
+.tag {
+    background-color: #ccc;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 600px; /* Ajusta el ancho máximo de la imagen principal */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Consultas de medios para diseño responsivo */
+
+/* Tabletas y dispositivos más pequeños */
+@media (max-width: 991px) {
+    header {
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas si es necesario */
+    }
+
+    .menu-text, .search, .menu-icon {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    .logo {
+        height: 30px; /* Ajusta la altura del logo para dispositivos más pequeños */
+        margin: 10px 0; /* Añade margen vertical para separar del resto de elementos */
+    }
+
+    .tags {
+        flex-direction: row; /* Asegura que los tags estén en una fila */
+        justify-content: center; /* Centra los tags en el contenedor */
+    }
+
+    .tag {
+        margin-bottom: 10px; /* Añade margen inferior para separarlos verticalmente */
+    }
+}
+
+/* Dispositivos móviles */
+@media (max-width: 767px) {
+    header {
+        flex-direction: row; /* Asegura que los elementos estén en una columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    .menu-text, .search, .menu-icon {
+        font-size: 14px;
+        padding: 3px 5px;
+        margin: 10px 0; /* Añade margen entre los elementos para separarlos más */
+    }
+
+    .logo-container {
+        padding: 5px 10px;
+    }
+
+    .secondary-logo {
+        height: 80px; /* Ajusta la altura del logo secundario para móviles */
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .tags {
+        flex-direction: row; /* Asegura que los tags estén en una fila */
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas si es necesario */
+    }
+
+    .tag {
+        font-size: 14px;
+        padding: 3px 7px;
+        margin-bottom: 10px; /* Añade margen inferior para separarlos verticalmente */
+    }
+
+    .main-image {
+        max-width: 100%;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+}
